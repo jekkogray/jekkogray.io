@@ -1,0 +1,226 @@
+html {
+	font-family: "Roboto", sans-serif;
+	/* font-family: "Shadows Into light"; */
+	color: #4b494d;
+	background: #fafafa;
+	padding: 0%;
+}
+
+/* GLOBAL */
+a:hover {
+	color: coral;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* HEADER */
+header {
+	margin: 5%;
+	overflow: hidden;
+	line-height: 2em;
+	position: relative;
+	font-family: "Shadows Into light";
+	text-align: center;
+	animation: headerAnimation 3s ease-in-out 0s;
+}
+
+header h1,
+header h3 {
+	font-size: auto;
+	margin: 0;
+	opacity: 1;
+	animation-name: opacityAnimation;
+	animation-duration: 4s;
+}
+
+del {
+	color: coral;
+}
+
+footer {
+	margin: 5%;
+	overflow: hidden;
+	line-height: 2em;
+	position: relative;
+	text-align: center;
+	animation: headerAnimation 3s ease-in-out 0s;
+}
+footer li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+@keyframes squashstretch {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.5, 1);
+	}
+
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes headerAnimation {
+	0% {
+		margin: 50% 0;
+	}
+	100% {
+		margin: 5% 0;
+	}
+}
+
+@keyframes opacityAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* SIDEBAR */
+aside {
+	border-right: solid 2px lightgrey;
+	padding: 0% 2%;
+	margin: 0% 2%;
+	vertical-align: top;
+	text-align: right;
+	display: inline-block;
+	width: 15vw;
+}
+
+aside ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+aside li {
+	line-height: 2em;
+}
+
+aside li:hover {
+	color: coral;
+}
+aside i {
+	display: inline;
+	margin-left: 10%;
+}
+
+/* MAIN */
+main {
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	width: 70vw;
+	margin-right: 5%;
+}
+
+.post {
+	display: inline-block;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 1.4em 0;
+	border: 2px solid lightgrey;
+	border-radius: 5px;
+	background: white;
+	max-height: 500%;
+	margin-bottom: 10px;
+}
+
+.post h3 {
+	margin: 0 10px;
+}
+
+.post p {
+	overflow: scroll;
+	margin: 0 10px;
+}
+
+.post .post-image:hover {
+	background: black;
+}
+.post .post-date {
+	margin: 0 10px;
+	color: grey;
+}
+
+.post img {
+	width: 100%;
+}
+
+.post canvas{
+	width: 100%;
+	height: 600;
+}
+
+.post img:hover {
+	opacity: 0.2;
+}
+/* MOBILE */
+@media (min-width: 200px) and (max-width: 500px) {
+	html {
+		font-size: 1.5em;
+		font-family: "Roboto", sans-serif;
+		/* font-family: "Shadows Into light"; */
+		color: #4b494d;
+		background: #fafafa;
+		padding: 0%;
+		max-width: 100vw;
+	}
+
+	/* HEADER */
+	header {
+		margin: 10% 0;
+		position: relative;
+		font-family: "Shadows Into light";
+		text-align: center;
+		height: 5vw;
+		animation: headerAnimation 3s ease-in-out 0s;
+	}
+	@keyframes headerAnimation {
+		0% {
+			margin-top: 20%;
+			margin-bottom: 0%;
+			height: 100vw;
+		}
+		100% {
+			height: 5vw;
+			margin-bottom: 50%;
+		}
+	}
+
+	/* SIDEBAR */
+	aside {
+		border-right: none;
+		border-bottom: solid lightgrey 2px;
+		vertical-align: top;
+		text-align: center;
+		display: inline-block;
+		width: 100vw;
+		height: auto;
+	}
+	i {
+		visibility: hidden;
+		opacity: 0.5;
+	}
+
+	/* MAIN */
+	main {
+		margin: 10px 0;
+		width: 100vw;
+	}
+	.post {
+		margin: 10px;
+	}
+	.post h3 {
+		margin: 0 10px;
+		font-family: inherit;
+	}
+}
