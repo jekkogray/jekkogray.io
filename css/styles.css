@@ -135,11 +135,12 @@ main {
 }
 
 .post h3 {
+	overflow: hidden;
 	margin: 0 10px;
 }
 
 .post p {
-	overflow: scroll;
+	overflow: hidden;
 	margin: 0 10px;
 }
 
