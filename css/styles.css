@@ -149,6 +149,7 @@ main {
     max-height: 500%;
     margin-bottom: 10px;
     animation: squashStretch 1.4s ease-in-out 0s;
+	min-width: 100%;
 }
 
 .post h3 {
@@ -257,7 +258,7 @@ main {
 
     .post {
         display: block;
-        margin: 10% 0 10% 10%;
+        margin: 10% 0 10% 2%;
     }
     .post img {
         width: 100%;
