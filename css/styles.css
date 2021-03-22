@@ -8,7 +8,7 @@ html {
 /* GLOBAL */
 a:hover {
     color: coral;
-	cursor: c;
+	cursor: pointer;
 }
 
 li:hover .fa-folder:before {
@@ -24,6 +24,7 @@ li:hover .fa-circle:before{
 }
 
 a {
+	transform: scale(1.1, 1.1);	
     text-decoration: none;
     color: inherit;
 }
@@ -118,7 +119,9 @@ aside li {
     line-height: 2em;
 }
 
-aside li:hover {
+a:hover, li:hover {
+	font-size: 1.2em;
+	/* transform: scale(1.1, 1.1);	 */
     color: coral;
 }
 aside i {
