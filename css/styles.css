@@ -104,6 +104,9 @@ header h3 {
 
 /* SIDEBAR */
 aside {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15rem;
     border-right: solid 2px lightgrey;
     padding: 0 2rem 0 0;
     margin: 0 2rem;
@@ -217,6 +220,8 @@ footer li {
 
     /* SIDEBAR */
     aside {
+        position: relative;
+        top: 0;
         display: block;
         border-right: none;
         border-bottom: solid lightgrey 2px;
