@@ -180,7 +180,7 @@ main {
 
 /* FOOTER */
 footer {
-    margin: 5rem 0;
+    margin: 0rem 0;
     overflow: hidden;
     line-height: 2em;
     text-align: center;
@@ -190,12 +190,6 @@ footer li {
     border-top: dotted 2px lightgrey;
     display: inline-block;
     list-style-type: none;
-    margin: 0 5%;
-}
-
-#css-creator {
-    color: grey;
-    text-align: center;
     margin: 5rem;
 }
 

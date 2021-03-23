@@ -25,6 +25,7 @@ function Footer() {
                     </li>
                 </ul>
             </nav>
+            <p className="css-creator">CSS and everything else created by <a href="">Me</a></p>
         </footer>
     );
 }
