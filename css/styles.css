@@ -1,3 +1,40 @@
+/* ANIMATION */
+@keyframes squashStretch {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1, 1.005);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes headerAnimation {
+    0% {
+        padding-bottom: 100;
+    }
+    100% {
+        padding-top: 0;
+    }
+}
+
+@keyframes opacityAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* GLOBAL */
+body,
+aside {
+    margin: 0;
+}
+
 html {
     font-family: "Noto Sans", sans-serif;
     color: #4b494d;
@@ -5,35 +42,52 @@ html {
     padding: 0%;
 }
 
-/* GLOBAL */
-a:hover {
-    color: coral;
-	cursor: pointer;
-}
-
-li:hover .fa-folder:before {
-	content: "\f07c";
-}
-
-li:hover .fa-square:before {
-	content: "\f1b2";
-}
-
-li:hover .fa-circle:before{
-	content:"\f192"
+h3 {
+    margin: 0%;
 }
 
 a {
-	transform: scale(1.1, 1.1);	
     text-decoration: none;
     color: inherit;
 }
 
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+del {
+    color: coral;
+}
+
+a:hover,
+li:hover {
+    font-size: 1.5rem;
+    color: coral;
+    cursor: pointer;
+}
+
+li:hover .fa-folder:before {
+    content: "\f07c";
+}
+
+li:hover .fa-square:before {
+    content: "\f1b2";
+}
+
+li:hover .fa-circle:before {
+    content: "\f192";
+}
+
 /* HEADER */
 header {
-    margin: 5% 0;
+    margin: 3rem 0;
     overflow: hidden;
-    line-height: 2em;
+    line-height: 2rem;
     font-family: "Shadows Into light";
     text-align: center;
 }
@@ -48,64 +102,15 @@ header h3 {
     animation: opacityAnimation 1.4s ease-in-out 0s;
 }
 
-del {
-    color: coral;
-}
-
-footer {
-    margin: 5% 0;
-    overflow: hidden;
-    line-height: 2em;
-    text-align: center;
-}	
-
-
-footer li {
-    border-top: dotted 2px lightgrey;
-    display: inline-block;
-    list-style-type: none;
-    margin: 0 5%;
-}
-
-@keyframes squashStretch {
-    0% {
-        transform: scale(1, 1);
-    }
-    50% {
-        transform: scale(1.0, 1.01);
-    }
-    100% {
-        transform: scale(1, 1);
-    }
-}
-
-@keyframes headerAnimation {
-    0% {
-		padding-bottom: 100;
-    }
-    100% {
-		padding-top:0;
-    }
-}
-
-@keyframes opacityAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 /* SIDEBAR */
 aside {
     border-right: solid 2px lightgrey;
-    padding: 0% 2%;
-    margin: 0% 2%;
+    padding: 0 2rem 0 0;
+    margin: 0 2rem;
     vertical-align: top;
     text-align: right;
     display: inline-block;
-    width: 8vw;
+    width: 14vw;
     animation: opacityAnimation 1.4s ease-in-out 0s;
 }
 
@@ -116,17 +121,12 @@ aside ul {
 }
 
 aside li {
-    line-height: 2em;
+    line-height: 2rem;
 }
 
-a:hover, li:hover {
-	font-size: 1.2em;
-	/* transform: scale(1.1, 1.1);	 */
-    color: coral;
-}
 aside i {
     display: inline;
-    margin-left: 10%;
+    margin-left: 1rem;
 }
 
 /* MAIN */
@@ -135,106 +135,84 @@ main {
     display: inline-block;
     vertical-align: top;
     width: 70vw;
-    margin-right: 5%;
 }
 
+/* POST */
 .post {
-    display: inline-block;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 1.4em 0;
+    padding: 0;
     border: 2px solid lightgrey;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     background: white;
-    max-height: 500%;
-    margin-bottom: 10px;
+    max-height: 500rem;
+    margin-bottom: 2rem;
     animation: squashStretch 1.4s ease-in-out 0s;
-	min-width: 100%;
+    min-width: 100%;
 }
 
-.post h3 {
-    overflow: hidden;
-    margin: 0 10px;
-}
-
+.post h3,
 .post p {
-    overflow: hidden;
-    margin: 5px 10px;
+    margin: 1.4rem;
 }
 
-.post .post-image:hover {
-    background: black;
+.post .post-image {
+    display: block;
 }
+
 .post .post-date {
-    margin: 10px;
-    color: grey;
+    color: rgb(44, 19, 19);
 }
 
 .post img {
     border-top: 2px solid lightgrey;
     border-bottom: 2px solid lightgrey;
     width: 100%;
-	height: 100%;
 }
 
 .post img:hover {
-    opacity: 0.6;
+    opacity: 1;
     animation: squashStretch 1.4s ease-in-out 0s;
 }
-#css-creator{
-	color: grey;
-	text-align: center;
-	margin-left: 2%;
-}
-/* MOBILE */
-@media (min-width: 200px) and (max-width: 600px) {
-    html {
-        /* overflow-x: hidden; */
-        font-size: 1.5em;
-        font-family: "Noto Sans", sans-serif;
-        font-style: "regular";
-        color: #4b494d;
-        background: #fafafa;
-    }
 
-    /* HEADER */
-    header {
-        display: block;
-        font-family: "Shadows Into light";
-        text-align: center;
-        animation: opacityAnimation 3s ease-in-out 0s;
+/* FOOTER */
+footer {
+    margin: 5rem 0;
+    overflow: hidden;
+    line-height: 2em;
+    text-align: center;
+}
+
+footer li {
+    border-top: dotted 2px lightgrey;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 5%;
+}
+
+#css-creator {
+    color: grey;
+    text-align: center;
+    margin: 5rem;
+}
+
+/* MOBILE */
+@media (min-width: 200px) and (max-width: 850px) {
+    html {
+        padding: 2rem;
     }
 
     header h1 {
-        font-size: 2em;
+        font-size: 3rem;
     }
 
-    header h1,
-    header h3 {
-        opacity: 1;
-        animation: opacityAnimation 3s ease-in-out 0s;
-    }
-
-    footer {
-        text-align: center;
-        width: auto;
-		margin-bottom: 0;
+    footer ul {
+        padding: 0;
     }
 
     footer li {
         display: block;
-    }
-
-    @keyframes headerAnimation {
-        0% {
-            margin-top: 20%;
-            margin-bottom: 0%;
-            max-width: 80vw;
-        }
-        100% {
-            height: 5vw;
-            margin-bottom: 50%;
-        }
+        padding: 3rem;
     }
 
     /* SIDEBAR */
@@ -243,29 +221,34 @@ main {
         border-right: none;
         border-bottom: solid lightgrey 2px;
         text-align: center;
-        width: 100%;
+        width: auto;
+        margin: 0;
+        margin-bottom: 2rem;
+        padding: 1rem;
     }
 
-    aside i {
-        visibility: hidden;
+    aside .fa {
+        display: none;
     }
 
     /* MAIN */
     main {
+        margin: auto;
         display: block;
         width: auto;
     }
 
+    /* POST */
     .post {
-        display: block;
-        margin: 10% 0 10% 2%;
-    }
-    .post img {
-        width: 100%;
+        margin-bottom: 2rem;
     }
 
-    .post h3 {
-        margin-top: 0 5px;
-        font-family: inherit;
+    footer {
+        margin: auto;
+        width: auto;
+    }
+
+    footer li {
+        margin: auto;
     }
 }
