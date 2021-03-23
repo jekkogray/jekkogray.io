@@ -199,7 +199,7 @@ footer li {
 /* MOBILE */
 @media (min-width: 200px) and (max-width: 850px) {
     html {
-        padding: 3rem;
+        padding: 1rem;
     }
 
     header h1 {
