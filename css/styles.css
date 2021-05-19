@@ -137,7 +137,7 @@ main {
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    width: 70vw;
+    width: 65vw;
 }
 
 /* POST */
@@ -155,6 +155,7 @@ main {
 }
 
 .post h3,
+
 .post p {
     margin: 1.4rem;
 }
@@ -163,7 +164,16 @@ main {
     display: block;
 }
 
+.post .media {
+    width: 100%;
+    height: 500px;
+}
+
 .post .post-date {
+    color: rgb(44, 19, 19);
+}
+.post .tags {
+    font-style: italic;
     color: rgb(44, 19, 19);
 }
 
@@ -246,6 +256,10 @@ footer li {
     /* POST */
     .post {
         margin-bottom: 2rem;
+    }
+
+    .post .media {
+        width: 100%;
     }
 
     footer {
