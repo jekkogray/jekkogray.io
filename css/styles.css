@@ -259,6 +259,10 @@ footer li {
         margin-bottom: 2rem;
     }
 
+    .post p{
+        text-align: left;;
+    }
+
     .post .media {
         width: 100%;
     }
