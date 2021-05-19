@@ -158,6 +158,7 @@ main {
 
 .post p {
     margin: 1.4rem;
+    text-align: justify;
 }
 
 .post .post-image {
